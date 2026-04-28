@@ -1,0 +1,30 @@
+
+📌 مثال لتكوين صلاحيات موظف pos_agent في قاعدة البيانات
+json
+{
+  "modules": [
+    {
+      "moduleId": "expenses",
+      "enabled": false   // موظف POS لا يرى المصروفات أصلاً
+    }
+  ]
+}
+أما مدير مكتب فيمكن أن يرى كل الأعمدة ما عدا profitImpact:
+
+json
+{
+  "modules": [
+    {
+      "moduleId": "expenses",
+      "enabled": true,
+      "tables": [
+        {
+          "tableId": "expenses_table",
+          "enabled": true,
+          "visibleColumns": ["date", "category", "description", "amount", "currency", "paymentMethod", "accountName", "createdBy"],
+          "actions": ["view", "add", "edit", "print"]
+        }
+      ]
+    }
+  ]
+}

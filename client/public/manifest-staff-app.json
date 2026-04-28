@@ -1,0 +1,49 @@
+{
+  "name": "ليبيا مالية - موظفين",
+  "short_name": "موظفين",
+  "description": "تطبيق الموظفين - لوحة تحكم شركة ليبيا للخدمات المالية",
+  "start_url": "/?app=staff",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#1E2E3D",
+  "icons": [
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["finance", "business", "productivity"],
+  "screenshots": [
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "تسجيل الدخول",
+      "short_name": "دخول",
+      "description": "تسجيل الدخول لوحة التحكم",
+      "url": "/login",
+      "icons": [
+        {
+          "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png",
+          "sizes": "1024x1024",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

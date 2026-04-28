@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>ليبيا مالية - موظفين - تسجيل الدخول</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="تطبيق الموظفين - لوحة تحكم شركة ليبيا للخدمات المالية" />
+    <meta name="keywords" content="ليبيا المالية, موظفين, لوحة تحكم, تسجيل دخول" />
+    <meta name="author" content="شركة ليبيا للخدمات المالية" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="language" content="Arabic" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    
+    <!-- PWA Manifest - Staff App -->
+    <link rel="manifest" href="/manifest-staff-app.json" />
+    <meta name="theme-color" content="#1E2E3D" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="موظفين" />
+    <link rel="apple-touch-icon" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- Service Worker Script for Staff App -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        // Unregister all service workers first to clear cache
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          registrations.forEach(registration => {
+            registration.unregister();
+          });
+        });
+        
+        // Register new service worker for staff app
+        navigator.serviceWorker.register('/sw-staff.js', { scope: '/' })
+          .then(reg => console.log('Staff app service worker registered'))
+          .catch(err => console.log('Staff app service worker registration failed:', err));
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+  </body>
+
+</html>

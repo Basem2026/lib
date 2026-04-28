@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنظيف النظام - شركة ليبيا للخدمات المالية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .warning h3 {
+            color: #856404;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .warning ul {
+            color: #856404;
+            margin-right: 20px;
+            line-height: 1.8;
+        }
+        
+        .info-box {
+            background: #d1ecf1;
+            border: 2px solid #17a2b8;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .info-box h3 {
+            color: #0c5460;
+            margin-bottom: 10px;
+        }
+        
+        .info-box p {
+            color: #0c5460;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            flex: 1;
+            min-width: 150px;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(108, 117, 125, 0.3);
+        }
+        
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .result.success {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            color: #155724;
+        }
+        
+        .result.error {
+            background: #f8d7da;
+            border: 2px solid #dc3545;
+            color: #721c24;
+        }
+        
+        .result h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .result ul {
+            margin-right: 20px;
+            line-height: 1.8;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧹 تنظيف النظام</h1>
+        <p class="subtitle">شركة ليبيا للخدمات المالية</p>
+        
+        <div class="warning">
+            <h3>⚠️ تحذير هام</h3>
+            <p>هذه العملية ستقوم بحذف جميع البيانات التالية:</p>
+            <ul>
+                <li>جميع الزباين والبطاقات</li>
+                <li>جميع المعاملات والعمليات</li>
+                <li>جميع الموظفين (ماعدا المدير)</li>
+                <li>جميع المندوبين</li>
+                <li>جميع الحسابات البنكية والأرصدة</li>
+                <li>جميع المصروفات والرواتب</li>
+                <li>جميع السجلات والإشعارات</li>
+                <li>إعادة تعيين الخزينة للقيم الافتراضية</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>ℹ️ المدير الوحيد المتبقي</h3>
+            <p><strong>الاسم:</strong> محمد علي أحمد</p>
+            <p><strong>رقم الهاتف:</strong> 0920563695</p>
+            <p><strong>كلمة المرور:</strong> password123</p>
+            <p><strong>الرمز:</strong> LY-MGR-00001</p>
+        </div>
+        
+        <div class="button-group">
+            <button class="btn-danger" onclick="clearAllData()">
+                🗑️ تنظيف النظام الآن
+            </button>
+            <button class="btn-secondary" onclick="goBack()">
+                ← العودة للموقع
+            </button>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>جاري تنظيف النظام...</p>
+        </div>
+        
+        <div class="result" id="result"></div>
+    </div>
+    
+    <script>
+        function clearAllData() {
+            if (!confirm('هل أنت متأكد من تنظيف جميع البيانات؟\n\nهذه العملية لا يمكن التراجع عنها!')) {
+                return;
+            }
+            
+            // إظهار شاشة التحميل
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('result').style.display = 'none';
+            
+            setTimeout(() => {
+                try {
+                    // قائمة جميع المفاتيح
+                    const keysToDelete = [
+                        'customers_data', 'cards_data', 'transactions_data', 'accounts_data',
+                        'employees', 'auditLogs', 'dailyCloses',
+                        'treasury_data', 'expenses_data', 'salaries_data', 'financial_data',
+                        'banking_treasury_data', 'bank_accounts_data',
+                        'logs_data', 'operations_data', 'audit_data',
+                        'notifications_data', 'delegates_data', 'balances_data'
+                    ];
+                    
+                    // مسح جميع البيانات
+                    let deletedCount = 0;
+                    keysToDelete.forEach(key => {
+                        if (localStorage.getItem(key)) {
+                            localStorage.removeItem(key);
+                            deletedCount++;
+                        }
+                    });
+                    
+                    // تعيين قيم افتراضية فارغة
+                    localStorage.setItem('customers_data', JSON.stringify([]));
+                    localStorage.setItem('cards_data', JSON.stringify([]));
+                    localStorage.setItem('transactions_data', JSON.stringify([]));
+                    localStorage.setItem('accounts_data', JSON.stringify([]));
+                    localStorage.setItem('logs_data', JSON.stringify([]));
+                    localStorage.setItem('operations_data', JSON.stringify([]));
+                    localStorage.setItem('expenses_data', JSON.stringify([]));
+                    localStorage.setItem('bank_accounts_data', JSON.stringify([]));
+                    
+                    // إعادة تعيين الموظفين (المدير فقط)
+                    const managerOnly = [{
+                        id: '1',
+                        employeeCode: 'LY-MGR-00001',
+                        phone: '0920563695',
+                        fullName: 'محمد علي أحمد',
+                        jobTitle: 'manager',
+                        passwordHash: 'password123',
+                        status: 'active',
+                        permissions: ['add_customer', 'view_customers', 'edit_customer', 'delete_customer', 'print_customer_receipt', 'view_cards', 'add_card', 'edit_card', 'delete_card', 'view_operations', 'add_operation', 'edit_operation', 'delete_operation', 'view_operation_profit', 'print_operation_receipt', 'view_expenses', 'add_expense', 'view_salaries', 'add_salary', 'view_treasury', 'view_reports', 'view_financial_summary', 'submit_daily_close', 'approve_daily_close', 'reject_daily_close', 'manage_users', 'manage_permissions', 'edit_user', 'delete_user', 'view_logs', 'view_audit_trail', 'print_receipts', 'print_reports'],
+                        createdAt: new Date().toISOString(),
+                        createdBy: 'system',
+                        updatedAt: new Date().toISOString()
+                    }];
+                    localStorage.setItem('employees', JSON.stringify(managerOnly));
+                    
+                    // إعادة تعيين الخزينة
+                    const defaultTreasury = {
+                        cash: 0,
+                        bankAccounts: [],
+                        totalIncome: 0,
+                        totalExpenses: 0,
+                        transactions: []
+                    };
+                    localStorage.setItem('treasury_data', JSON.stringify(defaultTreasury));
+                    
+                    // إخفاء شاشة التحميل
+                    document.getElementById('loading').style.display = 'none';
+                    
+                    // عرض النتيجة
+                    const resultDiv = document.getElementById('result');
+                    resultDiv.className = 'result success';
+                    resultDiv.style.display = 'block';
+                    resultDiv.innerHTML = `
+                        <h3>✅ تم تنظيف النظام بنجاح!</h3>
+                        <ul>
+                            <li>تم مسح ${deletedCount} مفتاح من localStorage</li>
+                            <li>تم إعادة تعيين الموظفين (المدير فقط)</li>
+                            <li>تم إعادة تعيين الخزينة للقيم الافتراضية</li>
+                            <li>تم تعيين جميع القيم الافتراضية الفارغة</li>
+                        </ul>
+                        <p style="margin-top: 20px; font-weight: bold;">
+                            🔄 سيتم إعادة توجيهك للصفحة الرئيسية خلال 3 ثوانٍ...
+                        </p>
+                    `;
+                    
+                    // إعادة التوجيه بعد 3 ثوانٍ
+                    setTimeout(() => {
+                        window.location.href = '/';
+                    }, 3000);
+                    
+                } catch (error) {
+                    // إخفاء شاشة التحميل
+                    document.getElementById('loading').style.display = 'none';
+                    
+                    // عرض الخطأ
+                    const resultDiv = document.getElementById('result');
+                    resultDiv.className = 'result error';
+                    resultDiv.style.display = 'block';
+                    resultDiv.innerHTML = `
+                        <h3>❌ حدث خطأ أثناء التنظيف</h3>
+                        <p>${error.message}</p>
+                    `;
+                }
+            }, 1000);
+        }
+        
+        function goBack() {
+            window.location.href = '/';
+        }
+    </script>
+</body>
+</html>

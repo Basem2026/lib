@@ -1,0 +1,49 @@
+{
+  "name": "ليبيا للخدمات المالية",
+  "short_name": "ليبيا مالية",
+  "description": "تطبيق شركة ليبيا للخدمات المالية - حلول مالية احترافية موثوقة وآمنة",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#1E2E3D",
+  "icons": [
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/EpcRkvqYczsCqRRi.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/EpcRkvqYczsCqRRi.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["finance", "business"],
+  "screenshots": [
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/EpcRkvqYczsCqRRi.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "الصفحة الرئيسية",
+      "short_name": "الرئيسية",
+      "description": "الذهاب إلى الصفحة الرئيسية",
+      "url": "/",
+      "icons": [
+        {
+          "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/EpcRkvqYczsCqRRi.png",
+          "sizes": "1024x1024",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

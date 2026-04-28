@@ -1,0 +1,40 @@
+{
+  "name": "شركة ليبيا للخدمات المالية - تطبيق الموظفين",
+  "short_name": "تطبيق الموظفين",
+  "description": "تطبيق الموظفين - لوحة تحكم شركة ليبيا للخدمات المالية",
+  "start_url": "/login?app=staff-app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#1E2E3D",
+  "icons": [
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663215657361/hEaRsVNpcGRBTJiI.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
