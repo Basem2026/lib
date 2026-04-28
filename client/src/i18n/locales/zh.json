@@ -1,0 +1,36 @@
+{
+  "company": {
+    "name": "利比亚金融服务公司",
+    "location": "萨布拉塔",
+    "phone": "0920563695"
+  },
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "about": "关于我们",
+    "contact": "联系",
+    "login": "登录"
+  },
+  "services": {
+    "personalCards": "个人用途卡",
+    "dollarWithdrawal": "美元卡提取",
+    "localWithdrawal": "本地卡提取",
+    "transfers": "转账和服务"
+  },
+  "buttons": {
+    "viewDetails": "查看详情",
+    "add": "添加",
+    "edit": "编辑",
+    "delete": "删除",
+    "save": "保存",
+    "cancel": "取消",
+    "logout": "登出",
+    "submit": "提交"
+  },
+  "messages": {
+    "welcome": "欢迎",
+    "success": "成功",
+    "error": "发生错误",
+    "loading": "加载中..."
+  }
+}

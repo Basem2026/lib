@@ -1,0 +1,36 @@
+{
+  "company": {
+    "name": "شركة ليبيا للخدمات المالية",
+    "location": "صبراته",
+    "phone": "0920563695"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "services": "الخدمات",
+    "about": "عن الشركة",
+    "contact": "اتصل بنا",
+    "login": "دخول"
+  },
+  "services": {
+    "personalCards": "بطاقات الأغراض الشخصية",
+    "dollarWithdrawal": "سحب بطاقات الدولار",
+    "localWithdrawal": "سحب البطاقات المحلية",
+    "transfers": "التحويلات والخدمات"
+  },
+  "buttons": {
+    "viewDetails": "عرض التفاصيل",
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "logout": "تسجيل خروج",
+    "submit": "إرسال"
+  },
+  "messages": {
+    "welcome": "أهلاً وسهلاً",
+    "success": "تم بنجاح",
+    "error": "حدث خطأ",
+    "loading": "جاري التحميل..."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "company": {
+    "name": "Libya Financial Services Company",
+    "location": "Sabratah",
+    "phone": "0920563695"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "services": {
+    "personalCards": "Personal Purpose Cards",
+    "dollarWithdrawal": "Dollar Card Withdrawal",
+    "localWithdrawal": "Local Card Withdrawal",
+    "transfers": "Transfers and Services"
+  },
+  "buttons": {
+    "viewDetails": "View Details",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "logout": "Logout",
+    "submit": "Submit"
+  },
+  "messages": {
+    "welcome": "Welcome",
+    "success": "Success",
+    "error": "An error occurred",
+    "loading": "Loading..."
+  }
+}
