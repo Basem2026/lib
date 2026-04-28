@@ -1,0 +1,2 @@
+ALTER TABLE `treasury_records` MODIFY COLUMN `type` enum('capital','revenue','expense','profit','withdrawal','deposit','cash','bank_account','wallet','custody','transaction') NOT NULL;--> statement-breakpoint
+ALTER TABLE `treasury_records` ADD `data` json;

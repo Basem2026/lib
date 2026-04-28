@@ -1,0 +1,76 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1769600137190,
+      "tag": "0000_large_edwin_jarvis",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1770221722495,
+      "tag": "0001_first_shockwave",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1770229769440,
+      "tag": "0002_misty_stark_industries",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1770392453718,
+      "tag": "0003_stormy_william_stryker",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1770395781027,
+      "tag": "0004_big_martin_li",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1770408538030,
+      "tag": "0005_silly_matthew_murdock",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1770408779147,
+      "tag": "0006_numerous_morg",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1770408868801,
+      "tag": "0007_early_colleen_wing",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1770409006356,
+      "tag": "0008_square_rockslide",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "5",
+      "when": 1773629689587,
+      "tag": "0009_sweet_metal_master",
+      "breakpoints": true
+    }
+  ]
+}
